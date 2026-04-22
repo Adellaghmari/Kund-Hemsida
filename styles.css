@@ -101,7 +101,7 @@ ul {
 }
 
 .hero__title {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", "Manrope", serif;
   font-size: clamp(42px, 6vw, 86px);
   margin: 0 0 20px;
 }
