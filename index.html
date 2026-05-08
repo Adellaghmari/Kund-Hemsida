@@ -1,0 +1,478 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kreatören — Livets Tidslinje</title>
+    <meta
+      name="description"
+      content="Interaktiv tidslinje med scroll, dynamiskt inneh&aring;ll och varierad media fr&aring;n 2012 till 2026."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__stream">
+        <iframe
+          src="https://player.twitch.tv/?channel=shroud&parent=localhost&parent=127.0.0.1"
+          allowfullscreen
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Tidslinje 2012-2026</p>
+        <h1 class="hero__title">Kreatören</h1>
+        <p class="hero__subtitle">
+          En interaktiv tidslinje om spel, community, motg&aring;ngar och utveckling.
+          Scrolla genom &aring;ren och se hur ber&auml;ttelsen byggs steg f&ouml;r steg.
+        </p>
+        <a class="hero__cta" href="#y2012">Starta 2012</a>
+      </div>
+    </header>
+
+    <nav class="timeline-nav" aria-label="Tidslinjenavigation">
+      <button class="timeline-nav__button is-active" data-target="y2012">
+        2012
+      </button>
+      <button class="timeline-nav__button" data-target="y2013">2013</button>
+      <button class="timeline-nav__button" data-target="y2014">2014</button>
+      <button class="timeline-nav__button" data-target="y2015">2015</button>
+      <button class="timeline-nav__button" data-target="y2016">2016</button>
+      <button class="timeline-nav__button" data-target="y2017">2017</button>
+      <button class="timeline-nav__button" data-target="y2018">2018</button>
+      <button class="timeline-nav__button" data-target="y2019">2019</button>
+      <button class="timeline-nav__button" data-target="y2020">2020</button>
+      <button class="timeline-nav__button" data-target="y2021">2021</button>
+      <button class="timeline-nav__button" data-target="y2022">2022</button>
+      <button class="timeline-nav__button" data-target="y2023a">2023 · H1</button>
+      <button class="timeline-nav__button" data-target="y2023b">2023 · H2</button>
+      <button class="timeline-nav__button" data-target="y2024a">2024 · H1</button>
+      <button class="timeline-nav__button" data-target="y2024b">2024 · H2</button>
+      <button class="timeline-nav__button" data-target="y2025">2025</button>
+      <button class="timeline-nav__button" data-target="y2026">2026</button>
+    </nav>
+
+    <main class="timeline">
+      <section class="year is-revealed is-active" id="y2012" data-year="2012">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 01</p>
+            <h2 class="year__title">2012</h2>
+            <p class="year__tagline">Starten: livek&auml;nsla, gamingrum och f&ouml;rsta communityt.</p>
+          </div>
+          <div class="year__content">
+            <p>Tidslinjen b&ouml;rjar med uppt&auml;ckarlust: lives&auml;ndningar, tidiga spelminnen och k&auml;nslan av att ett community kan v&auml;xa fram.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">F&ouml;rsta streamkv&auml;llen</button><div class="highlight-card__body"><p>Ett f&ouml;rsta steg in i liveformatet d&auml;r n&auml;rvaro, tempo och kontakt med tittare blir lika viktigt som sj&auml;lva spelet.</p><p>Kortet visar starten p&aring; den r&ouml;da tr&aring;den: fr&aring;n ensam gaming till n&aring;got andra kan f&ouml;lja.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">Gamingrummet tar form</button><div class="highlight-card__body"><p>Setup, sk&auml;rmar och rutiner blir den fysiska basen f&ouml;r allt som senare v&auml;xer online.</p><p>Bilden ger &aring;ret en konkret plats ist&auml;llet f&ouml;r att bara beskriva id&eacute;n.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">F&ouml;rsta communityklippet</button><div class="highlight-card__body"><p>Sm&aring; &ouml;gonblick fr&aring;n spelkv&auml;llar blir material som g&aring;r att dela och minnas.</p><p>Clip-formatet visar hur korta nedslag kan skapa energi i tidslinjen.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">F&ouml;rsta streamkv&auml;llen</div><iframe data-src="https://www.youtube.com/embed/xRMAxZECj44" title="Video: F&ouml;rsta streamkv&auml;llen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">Gamingrummet tar form</div><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80" alt="Gaming setup med sk&auml;rmar och m&ouml;rk milj&ouml;" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">F&ouml;rsta communityklippet</div><iframe data-src="https://www.youtube.com/embed/IV_ugeAE7GQ" title="Clip: F&ouml;rsta communityklippet" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="year" id="y2013" data-year="2013">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 02</p>
+            <h2 class="year__title">2013</h2>
+            <p class="year__tagline">CS:GO, lagk&auml;nsla och f&ouml;rsta motg&aring;ngen.</p>
+          </div>
+          <div class="year__content">
+            <p>Fokus flyttar mot t&auml;vling och disciplin. Samtidigt visar &aring;ret att en resa inte bara best&aring;r av highlights, utan ocks&aring; pauser och motg&aring;ngar.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">CS:GO-grinden</button><div class="highlight-card__body"><p>Rankade matcher, aim-rutiner och kv&auml;llar med laget bygger en tydligare t&auml;vlingsidentitet.</p><p>Det ger &aring;ret en tydlig riktning: fr&aring;n att bara spela till att b&ouml;rja t&auml;nka som ett lag.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">Laget runt spelet</button><div class="highlight-card__body"><p>V&auml;nnerna, r&ouml;sterna och matchsnacket blir lika viktiga som resultatet.</p><p>Bilden kopplar underkategorin till lagk&auml;nsla och gemenskap.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">Skadan som bromsar</button><div class="highlight-card__body"><p>En fysisk motg&aring;ng bryter tempot men ger ocks&aring; ber&auml;ttelsen mer m&auml;nsklig tyngd.</p><p>Det korta klippet fungerar som kontrast till grinden: allt g&aring;r inte alltid fram&aring;t.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">CS:GO-grinden</div><iframe data-src="https://www.youtube.com/embed/57KbOTC6vyk" title="Video: CS:GO-grinden" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">Laget runt spelet</div><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80" alt="Gamingkontroller och spelmilj&ouml;" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">Skadan som bromsar</div><iframe data-src="https://www.youtube.com/embed/sAjjGyJbH5s" title="Clip: Skadan som bromsar" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="year" id="y2014" data-year="2014">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 03</p>
+            <h2 class="year__title">2014</h2>
+            <p class="year__tagline">Studenten, LAN och st&ouml;rre sammanhang.</p>
+          </div>
+          <div class="year__content">
+            <p>&Aring;ret k&auml;nns mer socialt och st&ouml;rre: nya sammanhang, LAN, resor och relationer som g&ouml;r tidslinjen bredare &auml;n bara spel.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">Studenten och friheten</button><div class="highlight-card__body"><p>Ett skifte fr&aring;n vardag och skola till mer eget ansvar, mer r&ouml;relse och fler m&ouml;jligheter.</p><p>Det ger tidslinjen en tydlig livsfas, inte bara en serie gamingh&auml;ndelser.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">DreamHack-k&auml;nslan</button><div class="highlight-card__body"><p>LAN-milj&ouml;n g&ouml;r communityt fysiskt: sk&auml;rmar, energi, m&ouml;ten och l&aring;nga dygn.</p><p>Bilden ska k&auml;nnas som event, datorer och m&auml;nniskor p&aring; samma plats.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">Nya samarbeten</button><div class="highlight-card__body"><p>Matcher, kreat&ouml;rer och lagkontakter b&ouml;rjar koppla ihop personliga minnen med st&ouml;rre scener.</p><p>Clipet speglar k&auml;nslan av ett kort eventmoment snarare &auml;n en hel dokument&auml;r.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">Studenten och friheten</div><iframe data-src="https://www.youtube.com/embed/jBl-I2HpI_k" title="Video: Studenten och friheten" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">DreamHack-k&auml;nslan</div><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80" alt="Teamarbete och datorer i kreativ milj&ouml;" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">Nya samarbeten</div><iframe data-src="https://www.youtube.com/embed/W7uWsX3RbPI" title="Clip: Nya samarbeten" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="year" id="y2015" data-year="2015">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 04</p>
+            <h2 class="year__title">2015</h2>
+            <p class="year__tagline">Raids, resor och community p&aring; riktigt.</p>
+          </div>
+          <div class="year__content">
+            <p>Nu blir communityt mer aktivt. Resor, raids och nya rum skapar en k&auml;nsla av momentum och st&ouml;rre n&auml;rvaro online.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">Communityraids</button><div class="highlight-card__body"><p>N&auml;r andra kreat&ouml;rer och tittare hittar in blir fl&ouml;det mer levande och of&ouml;ruts&auml;gbart.</p><p>Det visar hur digitalt inneh&aring;ll kan v&auml;xa genom m&auml;nniskor, inte bara genom teknik.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">LAN och resor</button><div class="highlight-card__body"><p>Fysiska m&ouml;ten ger variation mellan sk&auml;rm, scen och verkliga platser.</p><p>Bilden ger kapitlet en social och fysisk k&auml;nsla.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">Nya m&ouml;jligheter</button><div class="highlight-card__body"><p>&Aring;ret fungerar som en bro mellan hobby och mer seri&ouml;s n&auml;rvaro.</p><p>Det korta klippet visar energin n&auml;r n&aring;got pl&ouml;tsligt tar fart.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">Communityraids</div><iframe data-src="https://www.youtube.com/embed/Ur4MyHaH8yM" title="Video: Communityraids" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">LAN och resor</div><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Grupp som samarbetar runt en laptop" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">Nya m&ouml;jligheter</div><iframe data-src="https://www.youtube.com/embed/JaRvXmaxqDs" title="Clip: Nya m&ouml;jligheter" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="year" id="y2016" data-year="2016">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 05</p>
+            <h2 class="year__title">2016</h2>
+            <p class="year__tagline">Nya spel, ny identitet och mer storytelling.</p>
+          </div>
+          <div class="year__content">
+            <p>Flera titlar och id&eacute;er testas. Det blir ett &aring;r d&auml;r inneh&aring;llet inte bara handlar om prestation, utan ocks&aring; om r&ouml;st och personlighet.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">Overwatch-perioden</button><div class="highlight-card__body"><p>Ett nytt spel skapar ny energi och en annan typ av tempo i inneh&aring;llet.</p><p>Variation i spel g&ouml;r ocks&aring; att tidslinjen f&aring;r flera visuella uttryck.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">Mer &auml;n streamer</button><div class="highlight-card__body"><p>Ber&auml;ttelsen b&ouml;rjar handla om identitet: vem man &auml;r bakom s&auml;ndningen och varf&ouml;r inneh&aring;llet spelar roll.</p><p>Bilden markerar en mer personlig och kreativ fas.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">Event och experiment</button><div class="highlight-card__body"><p>Nya format testas, fr&aring;n kortare klipp till mer ber&auml;ttande inneh&aring;ll.</p><p>Clipet visar testk&auml;nslan: snabbt, visuellt och l&auml;tt att byta ut senare.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">Overwatch-perioden</div><iframe data-src="https://www.youtube.com/embed/dushZybUYnM" title="Video: Overwatch-perioden" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">Mer &auml;n streamer</div><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80" alt="&Ouml;ppen studio- och arbetsmilj&ouml;" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">Event och experiment</div><iframe data-src="https://www.youtube.com/embed/sfsJGqdhegw" title="Clip: Event och experiment" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="year" id="y2017" data-year="2017">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 06</p>
+            <h2 class="year__title">2017</h2>
+            <p class="year__tagline">Vloggar, citat och starkare r&ouml;st.</p>
+          </div>
+          <div class="year__content">
+            <p>&Aring;ret f&aring;r mer personlighet. Vloggar, communitycitat och reflektioner g&ouml;r att tidslinjen b&ouml;rjar k&auml;nnas som en ber&auml;ttelse med egen ton.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">Vloggformatet</button><div class="highlight-card__body"><p>Kameran flyttar n&auml;rmare vardagen och g&ouml;r inneh&aring;llet mer direkt och m&auml;nskligt.</p><p>Det ger en bra kontrast till &aring;ren som fokuserar mer p&aring; t&auml;vling.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">Citat som fastnar</button><div class="highlight-card__body"><p>Enstaka meningar och &ouml;gonblick kan b&auml;ra ett helt &aring;r n&auml;r de presenteras p&aring; r&auml;tt s&auml;tt.</p><p>Bilden ger plats f&ouml;r reflektion och personligare ton.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">Communityminnen</button><div class="highlight-card__body"><p>Relationerna runt inneh&aring;llet blir lika viktiga som sj&auml;lva spelen.</p><p>Clipet ska k&auml;nnas som ett snabbt communitymoment.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">Vloggformatet</div><iframe data-src="https://www.youtube.com/embed/6pYbFWXAW8o" title="Video: Vloggformatet" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">Citat som fastnar</div><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80" alt="Anteckningar och laptop f&ouml;r storytelling" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">Communityminnen</div><iframe data-src="https://www.youtube.com/embed/WWjdmTUrVuM" title="Clip: Communityminnen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="year" id="y2018" data-year="2018">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 07</p>
+            <h2 class="year__title">2018</h2>
+            <p class="year__tagline">T&auml;vlingsenergi och nya arenor.</p>
+          </div>
+          <div class="year__content">
+            <p>Fokus ligger p&aring; tempo och bredd: t&auml;vlingsgrind, nya spel och en st&ouml;rre k&auml;nsla av r&ouml;relse mellan olika scener.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">SPL och FPL</button><div class="highlight-card__body"><p>T&auml;vlingsmilj&ouml;n skruvar upp niv&aring;n och g&ouml;r prestation till en central del av &aring;ret.</p><p>Det ger tidslinjen mer nerv och tydligare progression.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">Fortnite-v&aring;gen</button><div class="highlight-card__body"><p>Ett nytt spel f&ouml;r&auml;ndrar fl&ouml;det och &ouml;ppnar f&ouml;r snabbare, mer klippv&auml;nligt inneh&aring;ll.</p><p>Bilden ger &aring;ret en mer lekfull och f&auml;rgstark gamingk&auml;nsla.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">GTA RP och rollspel</button><div class="highlight-card__body"><p>Inneh&aring;llet f&aring;r mer improvisation, karakt&auml;r och situationer som bygger egna sm&aring; ber&auml;ttelser.</p><p>Clipet passar eftersom rollspel ofta fungerar b&auml;st i korta situationsklipp.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">SPL och FPL</div><iframe data-src="https://www.youtube.com/embed/OBIK9adRxLo" title="Video: SPL och FPL" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">Fortnite-v&aring;gen</div><img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80" alt="Retro gaming och f&auml;rgstark spelmilj&ouml;" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">GTA RP och rollspel</div><iframe data-src="https://www.youtube.com/embed/Bezq_ddPZzs" title="Clip: GTA RP och rollspel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="year" id="y2019" data-year="2019">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 08</p>
+            <h2 class="year__title">2019</h2>
+            <p class="year__tagline">Peak, grind och st&ouml;rre samarbeten.</p>
+          </div>
+          <div class="year__content">
+            <p>&Aring;ret sammanfattar toppar, starkare rutiner och f&ouml;rsta k&auml;nslan av att allt kan skalas upp.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">Peak i t&auml;vlingsgrinden</button><div class="highlight-card__body"><p>Fokus, rutiner och niv&aring; sammanfaller i ett &aring;r som k&auml;nns mer professionellt.</p><p>Det blir en tydlig milstolpe i tidslinjens utveckling.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">Starkare setup</button><div class="highlight-card__body"><p>Teknik, schema och produktion b&ouml;rjar k&auml;nnas mer genomt&auml;nkt.</p><p>Bilden kopplar &aring;ret till en mer professionell arbetsmilj&ouml;.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">St&ouml;rre samarbeten</button><div class="highlight-card__body"><p>N&auml;r externa parter och varum&auml;rken dyker upp k&auml;nns projektet st&ouml;rre &auml;n den egna kanalen.</p><p>Clipet ger en snabb k&auml;nsla av presentation, pitch eller partnerskap.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">Peak i t&auml;vlingsgrinden</div><iframe data-src="https://www.youtube.com/embed/a0DRCBDZoxc" title="Video: Peak i t&auml;vlingsgrinden" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">Starkare setup</div><img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80" alt="Laptop och teknik i m&ouml;rk milj&ouml;" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">St&ouml;rre samarbeten</div><iframe data-src="https://www.youtube.com/embed/a_W-WQBWirQ" title="Clip: St&ouml;rre samarbeten" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="year" id="y2020" data-year="2020">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 09</p>
+            <h2 class="year__title">2020</h2>
+            <p class="year__tagline">Rebrand, reflektion och nytt spel.</p>
+          </div>
+          <div class="year__content">
+            <p>Ett bryt&aring;r. Identitet, namn och riktning ompr&ouml;vas samtidigt som ett nytt spel &ouml;ppnar en ny t&auml;vlingsv&auml;g.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">Reflektion &ouml;ver offentlighet</button><div class="highlight-card__body"><p>Tidslinjen stannar upp och visar baksidan av att alltid vara synlig.</p><p>Den typen av kontrast g&ouml;r ber&auml;ttelsen mer trov&auml;rdig och mindre konstlat polerad.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">VALORANT kommer in</button><div class="highlight-card__body"><p>Ett nytt spel skapar ny hunger och en tydligare t&auml;vlingsriktning.</p><p>Bilden ger kapitlet en kallare, mer digital t&auml;vlingsk&auml;nsla.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">Nytt namn och ny ambition</button><div class="highlight-card__body"><p>Rebrandingen g&ouml;r att identiteten k&auml;nns mer avsiktlig och fram&aring;triktad.</p><p>Clipet visar hur ett kort announcement kan markera en ny fas.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">Reflektion &ouml;ver offentlighet</div><iframe data-src="https://www.youtube.com/embed/qu8tgCb5jYM" title="Video: Reflektion &ouml;ver offentlighet" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">VALORANT kommer in</div><img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80" alt="Digital kod och m&ouml;rk teknisk k&auml;nsla" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">Nytt namn och ny ambition</div><iframe data-src="https://www.youtube.com/embed/NNNvj73NqnA" title="Clip: Nytt namn och ny ambition" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="year" id="y2021" data-year="2021">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 10</p>
+            <h2 class="year__title">2021</h2>
+            <p class="year__tagline">Proffssatsning, beslut och disciplin.</p>
+          </div>
+          <div class="year__content">
+            <p>Tidslinjen g&aring;r in i en mer seri&ouml;s fas d&auml;r valen f&aring;r st&ouml;rre konsekvenser och rutiner blir viktigare.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">VALORANT-proffs</button><div class="highlight-card__body"><p>Satsningen kr&auml;ver fokus, struktur och kontinuitet snarare &auml;n bara energi.</p><p>Det visar hur ber&auml;ttelsen g&aring;r fr&aring;n uppt&auml;ckt till professionell riktning.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">Stora beslut</button><div class="highlight-card__body"><p>Att v&auml;lja bort trygghet f&ouml;r en tydligare riktning blir ett centralt tema.</p><p>Bilden ger &aring;ret en mer stillsam och beslutsam ton.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">Kalla vanor</button><div class="highlight-card__body"><p>Isbad och disciplinerande rutiner blir symboler f&ouml;r kontroll och &aring;terh&auml;mtning.</p><p>Clipet g&ouml;r rutinen konkret och l&auml;tt att f&ouml;rst&aring; visuellt.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">VALORANT-proffs</div><iframe data-src="https://www.youtube.com/embed/lihYUxBZ_BE" title="Video: VALORANT-proffs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">Stora beslut</div><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Kall natur och reflekterande landskap" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">Kalla vanor</div><iframe data-src="https://www.youtube.com/embed/XG1jbT2B2ZY" title="Clip: Kalla vanor" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="year" id="y2022" data-year="2022">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 11</p>
+            <h2 class="year__title">2022</h2>
+            <p class="year__tagline">Reset, resor och nya vanor.</p>
+          </div>
+          <div class="year__content">
+            <p>Efter h&ouml;g intensitet kommer ett &aring;r av omst&auml;llning: milj&ouml;byte, ekonomi, livsstil och nya s&auml;tt att t&auml;nka.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">Flytt och platsbyte</button><div class="highlight-card__body"><p>Nya milj&ouml;er g&ouml;r att tidslinjen f&aring;r mer resk&auml;nsla och mer personlig skala.</p><p>Det visar hur layouten kan b&auml;ra annat &auml;n bara spelklipp.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">Ekonomiska l&auml;rdomar</button><div class="highlight-card__body"><p>Risk, f&ouml;rlust och omv&auml;rdering ger ber&auml;ttelsen mer verklighetsk&auml;nsla.</p><p>Bilden symboliserar v&auml;gen vidare snarare &auml;n en snabb vinst.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">Nya rutiner</button><div class="highlight-card__body"><p>Mat, tr&auml;ning och trading blir s&auml;tt att hitta kontroll i en r&ouml;rigare period.</p><p>Clipet visar en kort rutin snarare &auml;n ett stort event.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">Flytt och platsbyte</div><iframe data-src="https://www.youtube.com/embed/XO4F_OQPphg" title="Video: Flytt och platsbyte" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">Ekonomiska l&auml;rdomar</div><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80" alt="V&auml;g genom landskap som symboliserar omstart" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">Nya rutiner</div><iframe data-src="https://www.youtube.com/embed/K4ns53t77bk" title="Clip: Nya rutiner" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="year" id="y2023a" data-year="2023">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 12</p>
+            <h2 class="year__title">2023 &middot; H1</h2>
+            <p class="year__tagline">Identitet, paus och riktning.</p>
+          </div>
+          <div class="year__content">
+            <p>F&ouml;rsta halvan av &aring;ret k&auml;nns mer in&aring;tv&auml;nd. Tidslinjen saktar ner och st&auml;ller fr&aring;gan vad n&auml;sta kapitel faktiskt ska vara.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">Inte bara en titel</button><div class="highlight-card__body"><p>N&auml;r etiketter som streamer eller proffs inte r&auml;cker l&auml;ngre beh&ouml;ver ber&auml;ttelsen hitta en djupare k&auml;rna.</p><p>Det g&ouml;r sidan mer personlig och ger bes&ouml;karen n&aring;got att f&ouml;lja emotionellt.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">Vem &auml;r jag?</button><div class="highlight-card__body"><p>Fr&aring;gan blir ett nav f&ouml;r &aring;ret och binder ihop allt fr&aring;n vanor till framtidsplaner.</p><p>Bilden ger en lugnare och mer arkitektonisk k&auml;nsla av att bygga om.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">&Aring;terh&auml;mtning</button><div class="highlight-card__body"><p>Rutiner och lugnare tempo blir en del av den r&ouml;da tr&aring;den.</p><p>Clipet visar ett kort &aring;terh&auml;mtningsmoment som kontrast till h&ouml;gintensiva &aring;r.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">Inte bara en titel</div><iframe data-src="https://www.youtube.com/embed/Couw74tec7Q" title="Video: Inte bara en titel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">Vem &auml;r jag?</div><img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1200&q=80" alt="Modern arkitektur och tydliga linjer" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">&Aring;terh&auml;mtning</div><iframe data-src="https://www.youtube.com/embed/5z2vWpdMo8k" title="Clip: &Aring;terh&auml;mtning" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="year" id="y2023b" data-year="2023">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 13</p>
+            <h2 class="year__title">2023 &middot; H2</h2>
+            <p class="year__tagline">Comeback, IRL och ny energi.</p>
+          </div>
+          <div class="year__content">
+            <p>Andra halvan v&auml;xlar upp. Comeback, sponsorid&eacute;er och mer fysiskt inneh&aring;ll g&ouml;r tidslinjen snabbare igen.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">Comeback efter paus</button><div class="highlight-card__body"><p>Efter reflektionen kommer r&ouml;relse: nytt driv, ny publik och tydligare riktning.</p><p>Kontrasten mellan H1 och H2 g&ouml;r &aring;ret mer dynamiskt.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">IRL-cykel</button><div class="highlight-card__body"><p>Inneh&aring;llet flyttar ut i verkligheten och f&aring;r mer tempo, risk och n&auml;rvaro.</p><p>Bilden kopplar &aring;ret till r&ouml;relse och verkliga milj&ouml;er.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">Kl&auml;dm&auml;rke och sponsorjakt</button><div class="highlight-card__body"><p>Ambitionen breddas fr&aring;n kanal till helhet: varum&auml;rke, produkt och ber&auml;ttelse.</p><p>Clipet ger en snabb pitchk&auml;nsla som passar sponsor- och varum&auml;rkessp&aring;ret.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">Comeback efter paus</div><iframe data-src="https://www.youtube.com/embed/AdVJNTpOFIY" title="Video: Comeback efter paus" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">IRL-cykel</div><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80" alt="V&auml;g och landskap f&ouml;r IRL-r&ouml;relse" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">Kl&auml;dm&auml;rke och sponsorjakt</div><iframe data-src="https://www.youtube.com/embed/KRRIL_FerrI" title="Clip: Kl&auml;dm&auml;rke och sponsorjakt" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="year" id="y2024a" data-year="2024">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 14</p>
+            <h2 class="year__title">2024 &middot; H1</h2>
+            <p class="year__tagline">Grind, programmering och nya verktyg.</p>
+          </div>
+          <div class="year__content">
+            <p>Nu b&ouml;rjar den tekniska tr&aring;den ta mer plats. Spelgrind och programmering st&aring;r bredvid varandra som tv&aring; s&auml;tt att bygga disciplin.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">League-grind igen</button><div class="highlight-card__body"><p>&Aring;terkommande grind visar t&aring;lamod och f&ouml;rm&aring;gan att h&aring;lla i en process l&auml;nge.</p><p>Det speglar &auml;ven programmering: sm&aring; f&ouml;rb&auml;ttringar &ouml;ver tid blir stora resultat.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">Programmering</button><div class="highlight-card__body"><p>Kodandet blir ett konkret steg mot att skapa egna system, inte bara inneh&aring;ll i andras plattformar.</p><p>Bilden g&ouml;r kopplingen till kod och webb tydlig f&ouml;r rekryterare.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">Media och produktion</button><div class="highlight-card__body"><p>TV, video och webb b&ouml;rjar k&auml;nnas som delar av samma kreativa verktygsl&aring;da.</p><p>Clipet visar snabb produktion och passar som kort kontrast till programmeringsbilden.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">League-grind igen</div><iframe data-src="https://www.youtube.com/embed/BGtROJeMPeE" title="Video: League-grind igen" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">Programmering</div><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80" alt="Kod p&aring; sk&auml;rm som representerar programmering" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">Media och produktion</div><iframe data-src="https://www.youtube.com/embed/db6gAI_vLSE" title="Clip: Media och produktion" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="year" id="y2024b" data-year="2024">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 15</p>
+            <h2 class="year__title">2024 &middot; H2</h2>
+            <p class="year__tagline">Identitet, tro och &aring;terkalibrering.</p>
+          </div>
+          <div class="year__content">
+            <p>&Aring;ret avslutas mer jordn&auml;ra. Familj, tro, tr&auml;ning och &aring;terh&auml;mtning g&ouml;r tidslinjen mer m&auml;nsklig och balanserad.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">Marocko och r&ouml;tter</button><div class="highlight-card__body"><p>Resan tillbaka till kultur och identitet ger ber&auml;ttelsen mer djup.</p><p>Det ger ocks&aring; media en annan f&auml;rg: varmare, lugnare och mer platsbunden.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">Tro och riktning</button><div class="highlight-card__body"><p>N&auml;r v&auml;rderingar blir tydligare blir ocks&aring; framtida m&aring;l mer begripliga.</p><p>Bilden ger kapitlet en lugnare och mer reflekterande ton.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">Tr&auml;ning och &aring;terkalibrering</button><div class="highlight-card__body"><p>Kropp, rutiner och fokus blir s&auml;tt att hitta balans efter intensiva &aring;r.</p><p>Clipet visar rutinen snabbt och konkret.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">Marocko och r&ouml;tter</div><iframe data-src="https://www.youtube.com/embed/u_WW4crrBRM" title="Video: Marocko och r&ouml;tter" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">Tro och riktning</div><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Landskap med varmt ljus och reflekterande k&auml;nsla" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">Tr&auml;ning och &aring;terkalibrering</div><iframe data-src="https://www.youtube.com/embed/EgcgioaCZQ4" title="Clip: Tr&auml;ning och &aring;terkalibrering" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="year" id="y2025" data-year="2025">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 16</p>
+            <h2 class="year__title">2025</h2>
+            <p class="year__tagline">Motg&aring;ng, &aring;terstart och ny fokusering.</p>
+          </div>
+          <div class="year__content">
+            <p>Ett &aring;r med kontraster: synlighet, sv&aring;ra h&auml;ndelser och viljan att hitta tillbaka till spelgl&auml;dje och riktning.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">TV och synlighet</button><div class="highlight-card__body"><p>N&auml;r ber&auml;ttelsen n&aring;r st&ouml;rre format blir presentationen viktigare.</p><p>Det g&ouml;r projektets rekryterarvinkel starkare: tydlig struktur hj&auml;lper andra f&ouml;rst&aring; resan snabbt.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">Motg&aring;ng och &aring;terh&auml;mtning</button><div class="highlight-card__body"><p>En tuff h&auml;ndelse bryter tempot men g&ouml;r comebacken mer meningsfull.</p><p>Bilden kopplar &aring;ret till digitalt arbete och att hitta tillbaka.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">Tillbaka till VALORANT</button><div class="highlight-card__body"><p>&Aring;terkomsten till ett k&auml;rnspel visar vad som fortfarande driver energin.</p><p>Clipet binder tillbaka till 2020 och g&ouml;r tidslinjen cirkul&auml;r.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">TV och synlighet</div><iframe data-src="https://www.youtube.com/embed/EXT8jgsH_0Q" title="Video: TV och synlighet" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">Motg&aring;ng och &aring;terh&auml;mtning</div><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="Laptop och digitalt arbetsfl&ouml;de" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">Tillbaka till VALORANT</div><iframe data-src="https://www.youtube.com/embed/Mtc1OnGR9DI" title="Clip: Tillbaka till VALORANT" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="year" id="y2026" data-year="2026">
+        <div class="year__inner">
+          <div class="year__meta">
+            <p class="year__eyebrow">Kapitel 17</p>
+            <h2 class="year__title">2026</h2>
+            <p class="year__tagline">Ny riktning, kod och framtida m&aring;l.</p>
+          </div>
+          <div class="year__content">
+            <p>Tidslinjen landar i framtid: spel, programmering och tydligare m&aring;l samlas i en riktning som g&aring;r att bygga vidare p&aring;.</p>
+            <ul class="year__highlights">
+              <li class="highlight-card" data-media-index="0"><button class="highlight-card__title" type="button">Spel med tydligare syfte</button><div class="highlight-card__body"><p>Spelandet finns kvar, men f&aring;r en annan roll: energi, samarbete och exempelmaterial till digitala projekt.</p><p>Det visar hur tidigare &aring;r kan anv&auml;ndas som grund f&ouml;r nya id&eacute;er.</p></div></li>
+              <li class="highlight-card" data-media-index="1"><button class="highlight-card__title" type="button">Programmering som verktyg</button><div class="highlight-card__body"><p>Kodandet blir s&auml;ttet att forma presentationen sj&auml;lv och bygga upplevelser fr&aring;n grunden.</p><p>Bilden visar teknik och byggande snarare &auml;n bara konsumtion.</p></div></li>
+              <li class="highlight-card" data-media-index="2"><button class="highlight-card__title" type="button">Framtida m&aring;l</button><div class="highlight-card__body"><p>N&auml;sta steg handlar om att byta ut demo-media mot egna klipp, f&ouml;rb&auml;ttra tillg&auml;nglighet och publicera live.</p><p>Clipet fungerar som en snabb fram&aring;tblick mot n&auml;sta version.</p></div></li>
+            </ul>
+            <div class="media-grid">
+              <div class="media-card" data-media-index="0"><div class="media-card__label">Video</div><div class="media-card__topic">Spel med tydligare syfte</div><iframe data-src="https://www.youtube.com/embed/QxASHIa78Lg" title="Video: Spel med tydligare syfte" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+              <div class="media-card" data-media-index="1"><div class="media-card__label">Bild</div><div class="media-card__topic">Programmering som verktyg</div><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="Elektronik och teknik som symboliserar byggande" loading="lazy" /></div>
+              <div class="media-card" data-media-index="2"><div class="media-card__label">Clip</div><div class="media-card__topic">Framtida m&aring;l</div><iframe data-src="https://www.youtube.com/embed/At6XyItIHsE" title="Clip: Framtida m&aring;l" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="timeline__spacer" aria-hidden="true"></div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Kreatören</p>
+      <a class="footer__cta" href="#top">Till toppen</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
